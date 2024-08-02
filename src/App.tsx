@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Hero from "./components/Hero"
 import Products from "./components/Products"
 
@@ -6,7 +7,10 @@ const App = () => {
     <>
       <main className="flex flex-col gap-10">
         <Hero />
-        <Products />
+        <div className="bg-secondary">
+          <Products />
+          <About />
+        </div>
       </main>
     </>
   )
