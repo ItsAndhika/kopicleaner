@@ -1,9 +1,13 @@
 import Hero from "./components/Hero"
+import Products from "./components/Products"
 
 const App = () => {
   return (
     <>
-      <Hero />
+      <main className="flex flex-col gap-10">
+        <Hero />
+        <Products />
+      </main>
     </>
   )
 }
