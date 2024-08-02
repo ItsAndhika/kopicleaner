@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="container flex flex-col gap-5 border-t-2 border-t-primary py-10 text-center">
+    <section id="contact" className="container flex flex-col gap-5 border-t-2 border-t-primary py-10 text-center">
         <h1 className="text-3xl font-bold font-dmsans">Join Our Coffee Community</h1>
         <p className="tracking-wide font-spacemono">Sign up for our newsletter to stay up-to-date on the latest Kopicoffee news, exclusive offers, and brewing tips.</p>
         <div className="mx-auto w-full max-w-sm space-y-2">

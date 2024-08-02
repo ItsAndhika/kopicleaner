@@ -3,6 +3,11 @@ type BaseType = {
     desc: string
 }
 
+type MenuType = {
+    title: string,
+    href: string
+}
+
 const products: Array<BaseType> = [
     {
         title: "Signature Blend",
@@ -33,4 +38,19 @@ const about: Array<BaseType> = [
     },
 ]
 
-export {products, about}
+const menu: Array<MenuType> = [
+    {
+        title: "Products",
+        href: "#products"
+    },
+    {
+        title: "About",
+        href: "#about"
+    },
+    {
+        title: "Contact",
+        href: "#contact"
+    },
+]
+
+export {products, about, menu}
