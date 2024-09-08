@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-    <div id='mobile-menu' className={`${ isOpen ? "translate-x-0" : "translate-x-[900px]" } bg-transparent backdrop-blur-md fixed top-0 bottom-0 right-0 w-4/6 transition duration-300 z-10 p-5 flex flex-col lg:hidden`}>
+    <div id='mobile-menu' className={`${ isOpen ? "translate-x-0" : "translate-x-[900px]" } bg-transparent backdrop-blur-md fixed top-0 bottom-0 right-0 w-4/6 transition duration-300 z-10 p-5 flex flex-col sm:hidden`}>
         <IoMdClose className='text-3xl self-end' onClick={handleClose} />
         <ul>
             {menu.map(item => (
@@ -29,9 +29,13 @@ const Header = () => {
     </div>
     <header className='container w-full h-20 flex justify-between items-center'>
         <FiCoffee className='text-3xl' />
-        <CiTextAlignRight className='text-3xl' onClick={handleOpen} />
-        <ul className='hidden'>
-            <li></li>
+        <CiTextAlignRight className='text-3xl sm:hidden' onClick={handleOpen} />
+        <ul className='hidden sm:flex sm:gap-5'>
+            {menu.map(item => (
+                <li>
+                    <a href={item.href} className='font-spacemono font-extralight'>{item.title}</a>
+                </li>
+            ))}
         </ul>
     </header>
     </>

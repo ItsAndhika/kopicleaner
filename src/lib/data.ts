@@ -60,8 +60,16 @@ const about: Array<BaseType> = [
 
 const menu: Array<MenuType> = [
     {
+        title: "Home",
+        href: "#"
+    },
+    {
         title: "Products",
         href: "#products"
+    },
+    {
+        title: "Brewing Guides",
+        href: "#brewing"
     },
     {
         title: "About",
